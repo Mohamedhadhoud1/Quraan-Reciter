@@ -1,16 +1,27 @@
 //import * as sound from "../assets/Hosary/" 
 
+import { useState } from "react";
+import axios from 'axios';
 function PlayerList(props) {
-
-const map= props.Shikh.slice(props.start,props.end)
+const [index, setIndex]=useState();
+const map= props.Shikh.slice(props.start,props.end);
 
 console.log(props.j)
+axios.get(`http://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-uthmani`)
+.then(function (response) {
+  
+  console.log(response.data.data.ayahs);
+})
+.catch(function (error) {
+  // handle error
+  console.log(error);
+})
     return ( 
         <ul className="player__playlist list">
       {map.map((mp3,index) => 
     
    
-          <li className="player__song" key={index}>
+          <li className="player__song" key={index} onClick={()=>setIndex(index)}>
           
             <img className="player__img img" src={props.img} alt="cover" />
           

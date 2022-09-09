@@ -25,10 +25,7 @@ function App() {
   const [h, setH] = useState({value:1});
   const localizer = useLocalizer();
   const params = useParams();
-  async function getText() {
-    let ayat = await fetch("http://api.alquran.cloud/v1/hizbQuarter/2/quran-uthmani");
-    console.log("ayat",ayat)
-  }
+ 
   return (
     <div className="App">
      
