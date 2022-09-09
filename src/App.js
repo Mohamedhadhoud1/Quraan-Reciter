@@ -51,12 +51,12 @@ function App() {
       <div className="player" id="player">
         
 <Routes>
-      <Route exact path='/:lid/Hosary' element={<><PlayerHeader img={HosaryImg}></PlayerHeader>
+      <Route exact path='/' element={<><PlayerHeader img={HosaryImg}></PlayerHeader>
          <PlayerList name={"Hosary"} img={HosaryImg} Shikh={Hosary} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
      
 
-      <Route exact path='/:lid/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+      <Route exact path='/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
           <PlayerList name={"AbdElBaset"}  img={AbdElBasetImg} Shikh={AbdElBaset} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
 </Routes>

@@ -17,8 +17,8 @@ function NavBar() {
 <>
         <div id="mySidenav" className="sidenav">
       <a href="javascript:void(0)" className="closebtn" onClick={()=>closeNav()}>&times;</a>
-      <Link to="/ar/AbdElBaset">Abd El-Baset</Link>
-      <Link to="/ar/Hosary">Hosary</Link>
+      <Link to="AbdElBaset">Abd El-Baset</Link>
+      <Link to="/">Hosary</Link>
       
     </div>
     
