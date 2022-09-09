@@ -4,7 +4,7 @@ function PlayerList(props) {
 
 const map= props.Shikh.slice(props.start,props.end)
 
-console.log(map)
+console.log(props.j)
     return ( 
         <ul className="player__playlist list">
       {map.map((mp3,index) => 
@@ -15,10 +15,10 @@ console.log(map)
             <img className="player__img img" src={props.img} alt="cover" />
           
             <p className="player__context">
-            
-              <b className="player__song-name">الحزب</b>
+            <b className="player__song-name" > {props.j}</b>
+              <b className="player__song-name" > {index===1? "ربع " :"" ||index===2? "نصف " :"" ||index===3? "ثلاثة أرباع " :""||index===0? "":"" }{props.h}</b>
               <span className="flex">
-             
+              <a href={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3} download><i class="fa fa-download" style={{fontSize:"36px",color:"grey"}}></i></a>
                 <span className="player__title">{props.name}</span>
                 <span className="player__song-time"></span>
               
