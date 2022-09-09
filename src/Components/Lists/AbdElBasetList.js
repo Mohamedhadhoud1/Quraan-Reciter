@@ -1,5 +1,4 @@
-const str = `001-Al-Fatiha.ogg
-002-Al-Baqara-From001-To025.ogg
+const str = `0002-Al-Baqara-From001-To025.ogg
 002-Al-Baqara-From026-To043.ogg
 002-Al-Baqara-From044-To059.ogg
 002-Al-Baqara-From060-To074.ogg
