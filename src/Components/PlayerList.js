@@ -26,7 +26,7 @@ console.log(map)
             
             </p>
           
-            <audio class="audio" src=''></audio>
+            <audio class="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+'002-Al-Baqara-From001-To025.ogg'}></audio>
           
           </li>
       )}
