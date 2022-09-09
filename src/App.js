@@ -8,6 +8,7 @@ import PlayerList from './Components/PlayerList';
 import Hosary from './Components/Lists/HosaryList';
 import HosaryImg from "./images/12128841321505649751.jpg"
 import AbdElBaset from './Components/Lists/AbdElBasetList';
+import AbdElBasetImg from './images/artworks-000203326815-nxyzvx-t500x500.jpg';
 import {
   BrowserRouter as Router,
   Routes,
@@ -55,8 +56,8 @@ function App() {
       </Route>
      
 
-      <Route exact path='/:lid/AbdElBaset' element={<><PlayerHeader></PlayerHeader>
-          <PlayerList name={"AbdElBaset"}  Shikh={AbdElBaset} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
+      <Route exact path='/:lid/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <PlayerList name={"AbdElBaset"}  img={AbdElBasetImg} Shikh={AbdElBaset} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
 </Routes>
       
