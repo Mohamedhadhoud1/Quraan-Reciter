@@ -49,7 +49,7 @@ axios.get(`https://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-u
             
             </p>
           
-            <audio className="audio" autoPlay src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
+            <audio className="audio"  src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
           
           </li>
       )}
