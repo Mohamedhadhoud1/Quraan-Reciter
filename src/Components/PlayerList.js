@@ -2,10 +2,12 @@
 
 function PlayerList(props) {
 
+const map= props.Shikh.slice(props.start,props.end)
 
+console.log(map)
     return ( 
         <ul class="player__playlist list">
-      {props.Shikh.map((mp3,index) => 
+      {map.map((mp3,index) => 
     
    
           <li class="player__song">
@@ -24,7 +26,7 @@ function PlayerList(props) {
             
             </p>
           
-            <audio class="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
+            <audio class="audio" src=''></audio>
           
           </li>
       )}
