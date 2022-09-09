@@ -6,27 +6,27 @@ const map= props.Shikh.slice(props.start,props.end)
 
 console.log(map)
     return ( 
-        <ul class="player__playlist list">
+        <ul className="player__playlist list">
       {map.map((mp3,index) => 
     
    
-          <li class="player__song">
+          <li className="player__song" key={index}>
           
-            <img class="player__img img" src={props.img} alt="cover" />
+            <img className="player__img img" src={props.img} alt="cover" />
           
-            <p class="player__context">
+            <p className="player__context">
             
-              <b class="player__song-name">الحزب</b>
-              <span class="flex">
-              
-                <span class="player__title">{props.name}</span>
-                <span class="player__song-time"></span>
+              <b className="player__song-name">الحزب</b>
+              <span className="flex">
+             
+                <span className="player__title">{props.name}</span>
+                <span className="player__song-time"></span>
               
               </span>
             
             </p>
           
-            <audio class="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
+            <audio className="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
           
           </li>
       )}
