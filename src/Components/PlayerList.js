@@ -10,7 +10,7 @@ const map= props.Shikh.slice(props.start,props.end);
 console.log(props.j)
 function gettext(index)  {
  
-axios.get(`http://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-uthmani`)
+axios.get(`https://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-uthmani`)
 .then(function (response) {
   
   //setQuarter(response.data.data.ayahs)
@@ -49,7 +49,7 @@ axios.get(`http://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-ut
             
             </p>
           
-            <audio className="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
+            <audio className="audio" autoPlay src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
           
           </li>
       )}
