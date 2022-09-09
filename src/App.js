@@ -19,7 +19,7 @@ import {
 import React, { useState } from 'react';
 import Select from 'react-select';
 import useLocalizer from "./Localization/useLocalizer";
-
+import PageNotFound from './Components/PageNotFound';
 function App() {
   const [j, setJ] = useState({value:1});
   const [h, setH] = useState({value:1});
@@ -73,6 +73,7 @@ console.log("app",quarter)
       <Route exact path='/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
           <PlayerList name={"AbdElBaset"} namear={"عبدالباسط عبدالصمد"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
+      <Route path="*" element={<PageNotFound />} />
 </Routes>
       
     
