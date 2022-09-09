@@ -54,12 +54,12 @@ function App() {
         
 <Routes>
       <Route exact path='/' element={<><PlayerHeader img={HosaryImg}></PlayerHeader>
-         <PlayerList name={"Hosary"} img={HosaryImg} Shikh={Hosary} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
+         <PlayerList name={"Hosary"} namear={"الحصري"} img={HosaryImg} Shikh={Hosary} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
      
 
       <Route exact path='/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <PlayerList name={"AbdElBaset"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
+          <PlayerList name={"AbdElBaset"} namear={"عبدالباسط عبدالصمد"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
 </Routes>
       
