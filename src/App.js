@@ -23,17 +23,23 @@ import useLocalizer from "./Localization/useLocalizer";
 function App() {
   const [j, setJ] = useState({value:1});
   const [h, setH] = useState({value:1});
+  const [quarter,setQuarter]=useState();
+  const [rere,setRere]=useState();
   const localizer = useLocalizer();
   const params = useParams();
- 
+ function getquarter(quarter){
+setQuarter(quarter)
+console.log("app",quarter)
+ }
   return (
     <div className="App">
      
        <NavBar></NavBar>
       
       <div id="main">
-      
-        <div className='select'>
+     
+
+        <div className='select' style={quarter?{marginTop:"400px"}:{marginTop:"0"}}>
         <Select
         defaultValue={1}
         isSearchable={false}
@@ -50,11 +56,17 @@ function App() {
         { value: 2, label: 'الحزب الثاني' }]}
       />
       </div>
+      <div className='quarter-text' style={quarter?{display:"block"}:{display:"none"}}>
+      {
+       
+         quarter ? quarter.map((ayah,index) =><p>{ayah.text}</p>):""
+    }
+    </div>
       <div className="player" id="player">
         
 <Routes>
       <Route exact path='/' element={<><PlayerHeader img={HosaryImg}></PlayerHeader>
-         <PlayerList name={"Hosary"} namear={"الحصري"} img={HosaryImg} Shikh={Hosary} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
+         <PlayerList getquarter={getquarter} name={"Hosary"} namear={"الحصري"} img={HosaryImg} Shikh={Hosary} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
      
 

@@ -4,7 +4,7 @@
 "use strict";
 setTimeout( function() {
 // add elemnts
-const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
+const bgBody = ["#e5e7e9", "#b0a4a4", "#9e8f7e", "#ffc382", "#e3ddaa", "#d6cbcf", "#c0c2c4"];
 const body = document.body;
 const player = document.getElementById("player");
 console.log("pp",player);
