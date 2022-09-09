@@ -17,8 +17,14 @@ function NavBar() {
 <>
         <div id="mySidenav" className="sidenav">
       <a href="javascript:void(0)" className="closebtn" onClick={()=>closeNav()}>&times;</a>
+       <Link to="/">Hosary</Link>
       <Link to="AbdElBaset">Abd El-Baset</Link>
-      <Link to="/">Hosary</Link>
+      <Link to="Menshawy">Al Menshawy</Link>
+      <Link to="Bannah">EL Bannah</Link>
+      <Link to="Katamy">Naser Al-Katamy</Link>
+      <Link to="Jibrel">Mohamed Jibrel</Link>
+      <Link to="Mashary">Mashary Rashed</Link>
+      <Link to="Saad">Saad Al Ghamdy</Link>
       
     </div>
     
