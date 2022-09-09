@@ -53,3 +53,11 @@ width: 70%;
   margin: 10px;
   z-index: 2  ;
 }
+.pp{
+  text-align: center;
+  font-weight: bold;
+ position: absolute;
+ bottom: 5px;
+ right: 25%;
+ left: 25%;
+}
