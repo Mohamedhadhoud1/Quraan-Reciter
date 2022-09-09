@@ -1,0 +1,36 @@
+//import * as sound from "../assets/Hosary/" 
+
+function PlayerList(props) {
+
+
+    return ( 
+        <ul class="player__playlist list">
+      {props.Shikh.map((mp3,index) => 
+    
+   
+          <li class="player__song">
+          
+            <img class="player__img img" src={props.img} alt="cover" />
+          
+            <p class="player__context">
+            
+              <b class="player__song-name">الحزب</b>
+              <span class="flex">
+              
+                <span class="player__title">{props.name}</span>
+                <span class="player__song-time"></span>
+              
+              </span>
+            
+            </p>
+          
+            <audio class="audio" src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
+          
+          </li>
+      )}
+        
+        </ul>
+     );
+            }
+
+export default PlayerList;
