@@ -7,6 +7,12 @@ import PlayerHeader from './Components/PlayerHeader';
 import PlayerList from './Components/PlayerList';
 import Hosary from './Components/Lists/HosaryList';
 import HosaryImg from "./images/12128841321505649751.jpg"
+import bannahImg from "./images/bannah.jpg"
+import menshawyImg from "./images/menshawy.jpg"
+import jibrelImg from "./images/gebreel.jpg"
+import masharyImg from "./images/mashary.jpg"
+import naserImg from "./images/naser.jpg"
+import saadImg from "./images/Saad.jpg"
 import AbdElBaset from './Components/Lists/AbdElBasetList';
 import AbdElBasetImg from './images/artworks-000203326815-nxyzvx-t500x500.jpg';
 import Bannah from './Components/Lists/Bannah';
@@ -78,27 +84,27 @@ console.log("app",quarter)
      
 
       <Route exact path='/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <PlayerList name={"AbdElBaset"} namear={"عبدالباسط عبدالصمد"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
+          <LinkedPlayerList getquarter={getquarter} name={"AbdElBaset"} namear={"عبدالباسط عبدالصمد"} identifier={"abd--albaset---moratal---by--radio---by--arba3--to--033-altawbah--mp3--full--m"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      
+      <Route exact path='/Bannah' element={<><PlayerHeader img={bannahImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Bannah"} identifier={"zzz122_20220305zzz"} namear={"محمود علي البنا"} Shikh={Bannah}  img={bannahImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
 
-      <Route exact path='/Bannah' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"Bannah"} identifier={"zzz122_20220305zzz"} namear={"محمود علي البنا"} Shikh={Bannah}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      <Route exact path='/Menshawy' element={<><PlayerHeader img={menshawyImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Menshawy"} identifier={"zzzz096-r-04-h-24zzz"} namear={"محمد صديق المنشاوي"} Shikh={Menshawy}  img={menshawyImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
-
-      <Route exact path='/Menshawy' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"Menshawy"} identifier={"zzzz096-r-04-h-24zzz"} namear={"محمد صديق المنشاوي"} Shikh={Menshawy}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      <Route exact path='/Jibrel' element={<><PlayerHeader img={jibrelImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"M.Jibrel"} identifier={"241-doaazzzzzz"} namear={"محمد جبريل "} Shikh={MJibrel}  img={jibrelImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
-      <Route exact path='/Jibrel' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"M.Jibrel"} identifier={"241-doaazzzzzz"} namear={"محمد جبريل "} Shikh={MJibrel}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      <Route exact path='/Katamy' element={<><PlayerHeader img={naserImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Naser Al Kattamy"} identifier={"full-quran-128kb-high-quality-240-part-by-naser-alqattami--mp3"} namear={"ناصر القطامي"} Shikh={Hosary}  img={naserImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
-      <Route exact path='/Katamy' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"Naser Al Kattamy"} identifier={"full-quran-128kb-high-quality-240-part-by-naser-alqattami--mp3"} namear={"ناصر القطامي"} Shikh={Hosary}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      <Route exact path='/Saad' element={<><PlayerHeader img={saadImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Saad Al Ghamdy"} identifier={"quran-by-sa3d-alghamdi--morattal-64-kb-high-quality-quran-full-240-part-arbaa3"} namear={"سعد الغامدي "} Shikh={SaadAlGhamdy}  img={saadImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
-      <Route exact path='/Saad' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"Saad Al Ghamdy"} identifier={"quran-by-sa3d-alghamdi--morattal-64-kb-high-quality-quran-full-240-part-arbaa3"} namear={"سعد الغمدي "} Shikh={SaadAlGhamdy}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
-      </Route>
-      <Route exact path='/Mashary' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
-          <LinkedPlayerList getquarter={getquarter} name={"Mashary Rashed"} identifier={"128kb----mshary---alafasy--by--md---almonfasel---mp3--full--mushaf--quran--240"} namear={"مشاري راشد العفاسي"} Shikh={Mashary}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      <Route exact path='/Mashary' element={<><PlayerHeader img={masharyImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Mashary Rashed"} identifier={"128kb----mshary---alafasy--by--md---almonfasel---mp3--full--mushaf--quran--240"} namear={"مشاري راشد العفاسي"} Shikh={Mashary}  img={masharyImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
       
       <Route path="*" element={<PageNotFound />} />
