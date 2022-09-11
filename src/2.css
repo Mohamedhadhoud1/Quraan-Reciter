@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 html {
-  
+  height: 100%;
     box-sizing: border-box ;
     --parent-height : 20em ;
     --duration: 1s ;
@@ -10,7 +10,12 @@ html {
     --cubic-slider : var(--duration) cubic-bezier(0.4, 0, 0.2, 1) ;
     --cubic-play-list : .35s var(--duration) cubic-bezier(0, 0.85, 0.11, 1.64) ;
     --cubic-slider-context : cubic-bezier(1, -0.01, 1, 1.01) ;
-    
+    height: 100%;
+    box-sizing:border-box;
+    background-image:  url("../src/images/pexels-khats-cassim-7429322.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 html *,
@@ -26,7 +31,7 @@ html *::after {
 body{
   
     margin: 0 ;
-   
+  
     display: flex ;
     user-select: none ;
     align-items: center ;
@@ -35,7 +40,10 @@ body{
     font-family: 'Quicksand', sans-serif ;
     -webkit-tap-highlight-color: transparent ;
     transition: background-color  var(--cubic-slider) ;
-
+    background-image:  url("../src/images/pexels-khats-cassim-7429322.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }  
 
 .img {

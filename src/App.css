@@ -4,23 +4,12 @@
   margin: 0 auto;
 width: 70%;
 
-box-sizing:border-box;
 }
 #root{
   width: 100% !important;
-  box-sizing:border-box;
-  background-image:  url("../src/images/pexels-khats-cassim-7429322.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 }
-html{
-  box-sizing:border-box;
-  background-image:  url("../src/images/pexels-khats-cassim-7429322.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
