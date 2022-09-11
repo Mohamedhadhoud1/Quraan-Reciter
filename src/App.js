@@ -52,7 +52,7 @@ console.log("app",quarter)
       <div id="main">
      
 
-        <div className='select' style={quarter?{marginTop:"400px"}:{marginTop:"0"}}>
+        <div className='select' >
         <Select
         defaultValue={1}
         isSearchable={false}
