@@ -46,7 +46,7 @@ axios.get(`https://api.alquran.cloud/v1/hizbQuarter/${props.start+index}/quran-u
                 <span className="player__song-time"></span>
               
               </span>
-            
+              <button onClick={()=>gettext(index+1)}>عرض الربع مكتوبا</button>
             </p>
           
             <audio className="audio"  src={process.env.PUBLIC_URL+"/assets/"+props.name+"/"+mp3}></audio>
