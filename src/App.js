@@ -22,6 +22,10 @@ import Select from 'react-select';
 import useLocalizer from "./Localization/useLocalizer";
 import PageNotFound from './Components/PageNotFound';
 import LinkedPlayerList from './Components/LinkedPlayerList';
+import Menshawy from './Components/Lists/Menshawy';
+import MJibrel from './Components/Lists/MJibrel';
+import SaadAlGhamdy from './Components/Lists/SaadAlGhamdy';
+import Mashary from './Components/Lists/Mashary';
 
 function App() {
   const [j, setJ] = useState({value:1});
@@ -81,6 +85,22 @@ console.log("app",quarter)
           <LinkedPlayerList getquarter={getquarter} name={"Bannah"} identifier={"zzz122_20220305zzz"} namear={"محمود علي البنا"} Shikh={Bannah}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
       </Route>
 
+      <Route exact path='/Menshawy' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Menshawy"} identifier={"zzzz096-r-04-h-24zzz"} namear={"محمد صديق المنشاوي"} Shikh={Menshawy}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      <Route exact path='/Jibrel' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"M.Jibrel"} identifier={"241-doaazzzzzz"} namear={"محمد جبريل "} Shikh={MJibrel}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      <Route exact path='/Katamy' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Naser Al Kattamy"} identifier={"full-quran-128kb-high-quality-240-part-by-naser-alqattami--mp3"} namear={"ناصر القطامي"} Shikh={Hosary}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      <Route exact path='/Saad' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Saad Al Ghamdy"} identifier={"quran-by-sa3d-alghamdi--morattal-64-kb-high-quality-quran-full-240-part-arbaa3"} namear={"سعد الغمدي "} Shikh={SaadAlGhamdy}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      <Route exact path='/Mashary' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Mashary Rashed"} identifier={"128kb----mshary---alafasy--by--md---almonfasel---mp3--full--mushaf--quran--240"} namear={"مشاري راشد العفاسي"} Shikh={Mashary}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+      
       <Route path="*" element={<PageNotFound />} />
 </Routes>
       

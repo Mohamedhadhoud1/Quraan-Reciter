@@ -87,9 +87,11 @@ function back(index) {
 function changeSliderContext() {
 
     sliderContext.style.animationName = "opacity";
-    
+    const name=playerPlayList[count].querySelector(".player__song-name1").textContent+playerPlayList[count].querySelector(".player__song-name").textContent;
     sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
-    sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
+    sliderTitle.textContent = name;
+    
+    //sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name1").textContent;
     
     if (sliderName.textContent.length > 16) {
         const textWrap = document.createElement("span");
@@ -115,7 +117,7 @@ function changeBgBody() {
 }
 
 function selectSong() {
-
+    changeSliderContext()
     song = playerSongs[count];
 
     for (const item of playerSongs) {
