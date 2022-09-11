@@ -76,7 +76,7 @@ console.log("app",quarter)
     }
     </div>
       <div className="player" id="player">
-        
+      
 <Routes>
       <Route exact path='/' element={<><PlayerHeader img={HosaryImg}></PlayerHeader>
          <PlayerList getquarter={getquarter} name={"Hosary"} namear={"الحصري"} img={HosaryImg} Shikh={Hosary} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
@@ -113,7 +113,7 @@ console.log("app",quarter)
     
     </div>
         </div>
-        <p className='pp'>🤲 صدقة جارية علي روح أمي غفر الله لها </p>
+        <p className='pp'>🤲 صدقة جارية لأمي غفر الله لها </p>
     </div>
   );
 }

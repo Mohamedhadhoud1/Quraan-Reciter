@@ -7,7 +7,10 @@ margin-bottom: 70px;
 }
 #root{
   width: 100% !important;
-
+  background-image:  url("../src/images/pexels-khats-cassim-7429322.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App-logo {
   height: 40vmin;
@@ -65,10 +68,14 @@ margin-bottom: 70px;
 }
 .quarter-text{
   border: 1px solid gray;
-  
+  color: black;
+  font-size:1.5rem;
+  font-weight: bolder;
   height: 500px;
   overflow: scroll;
   margin-bottom: 50px;
+  
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #main{
   display: flex;

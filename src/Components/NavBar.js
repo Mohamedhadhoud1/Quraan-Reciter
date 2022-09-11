@@ -30,7 +30,7 @@ function NavBar() {
     
    
     
-    <span style={{fontSize:"30px",cursor:"pointer",  position: "absolute", top: 0,left: 0}} onClick={()=>openNav()}>&#9776; </span>
+    <span style={{fontSize:"30px",cursor:"pointer", color:"white" ,position: "absolute", top: 0,left: 0}} onClick={()=>openNav()}>&#9776; </span>
     </>
      );
 }
