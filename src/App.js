@@ -9,6 +9,7 @@ import Hosary from './Components/Lists/HosaryList';
 import HosaryImg from "./images/12128841321505649751.jpg"
 import AbdElBaset from './Components/Lists/AbdElBasetList';
 import AbdElBasetImg from './images/artworks-000203326815-nxyzvx-t500x500.jpg';
+import Bannah from './Components/Lists/Bannah';
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,6 +21,8 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import useLocalizer from "./Localization/useLocalizer";
 import PageNotFound from './Components/PageNotFound';
+import LinkedPlayerList from './Components/LinkedPlayerList';
+
 function App() {
   const [j, setJ] = useState({value:1});
   const [h, setH] = useState({value:1});
@@ -73,6 +76,11 @@ console.log("app",quarter)
       <Route exact path='/AbdElBaset' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
           <PlayerList name={"AbdElBaset"} namear={"عبدالباسط عبدالصمد"}  img={AbdElBasetImg} Shikh={AbdElBaset} j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></PlayerList></>}>
       </Route>
+
+      <Route exact path='/Bannah' element={<><PlayerHeader img={AbdElBasetImg}></PlayerHeader>
+          <LinkedPlayerList getquarter={getquarter} name={"Bannah"} identifier={"zzz122_20220305zzz"} namear={"محمود علي البنا"} Shikh={Bannah}  img={AbdElBasetImg}  j={j.label} h={h.label} start={((j.value-1)*8)+((h.value-1)*4)} end={((j.value-1)*8)+((h.value-1)*4)+4}></LinkedPlayerList></>}>
+      </Route>
+
       <Route path="*" element={<PageNotFound />} />
 </Routes>
       
