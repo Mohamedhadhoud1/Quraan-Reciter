@@ -39,7 +39,7 @@ function PlayerHeader(props) {
             
             <p className="player__context slider__context">
             
-              <strong className="slider__name"></strong>
+              <strong className="slider__name">{props.namear}</strong>
               <span className="player__title slider__title"></span>
             
             </p>
